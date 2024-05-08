@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    padding: 0 2rem;
+}
+.header{
+    height: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: space-around;
+    align-items: center;
+    background-color: rgb(121, 3, 3);
+    
+}
+.logo{
+    align-items: center;
+    
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+.hero-icon{
+    font-size: 2.5rem;
+    border:1px solid white;
+    color: white;
+    display: inline-block;
+    padding: 0.6rem 0.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    list-style: none;
+    text-transform: capitalize;
+}
+.main-nav-list:link,
+.main-nav-list:visited{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+.main-nav-list:active,
+.main-nav-list:hover{
+    padding: 1rem;
+    background-color:rgba(197, 4, 4, 0.431) ;
+}
+.home{
+    height:55rem ;
+    background-image: url(../media/home.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.heading-primary{
+    font-size: 6rem;
+    color: white;
+    text-transform: capitalize;
+}
+.home-text{
+font-size: 3rem;
+color:white;
+margin-bottom: 2rem;
+}
+.home-btn{
+font-size: 1.8rem;
+text-decoration: none;
+color: white;
+background-color:rgb(121, 3, 3) ;
+padding: 1rem 2rem;
+border-radius: 9%;
+/* margin-left: 40%; */
+
+}
+.home-btn:hover{
+    background-color:rgba(197, 4, 4, 0.664) ;
+}
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.services{
+    margin: 0 auto;
+    padding: 0 4rem;
+    width: 120rem;
+    
+
+}
+.heading-secondary{
+    font-size: 3rem;
+    color:rgb(121, 3, 3);
+    text-transform: capitalize;
+    text-align: center;
+    margin: 5rem 0;
+    
+    
+
+}
+.container-1{
+    height: 34rem;
+    width: 28rem;
+    border-radius: 0.9rem;
+    color:rgb(124, 3, 3) ;
+    text-align: center;
+    box-shadow: 0.1rem 0.1rem 0.9rem rgba(9, 9, 9, 0.098);
+    overflow: hidden;
+    transition: all 0.2s;
+    
+}
+   .container-1:hover{
+    transform: scale(1.1);
+   }
+
+.spa-text{
+    font-size: 2.5rem;
+    padding: 0 3rem;
+    margin-top: 2rem;
+}
+.spa-text-2{
+    font-size: 1.5rem;
+    padding: 0 3rem;
+    margin-top: 2rem;
+}
+.spa-img{
+    height: 16rem;
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:4rem;
+    padding: 4rem;
+    margin-bottom: 5rem;
+}
+.service-link{
+    color:rgb(124, 3, 3) ;
+    font-size: 1.8rem;
+    margin-left: 45%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.service-link:hover{
+    text-decoration: underline;
+}
+hr{
+    margin-top: 5rem;
+   
+}
+
+
+.price{
+    margin-top: 5rem;
+    padding:0 3rem;
+}
+   .price-grid{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 3rem;
+padding: 3rem;
+   } 
+
+   .price-container{
+    height: 45rem;
+    width: 30rem;
+    box-shadow: 0.1rem 0.1rem 0.9rem rgba(9, 9, 9, 0.098);
+    text-align: center;
+    background-color:rgb(124, 3, 3) ;
+    color:white;
+    text-transform: capitalize;
+   }
+   
+   .price-time{
+font-size: 4rem;
+padding-top: 3rem;
+   }
+   .price-price{
+font-size: 3rem;
+margin: 3rem 0;
+   }
+   .price-list{
+list-style: none;
+
+display: inline-block;
+   }
+   .price-main-list{
+font-size: 2rem;
+margin-top: 1rem;
+   }
+   .tick{
+    color:white;
+    padding-right: 0.5rem;
+   }
+   .contact{
+    height: 35rem;
+    width: 85%;
+    margin: 0 auto;
+    background-color:rgb(124, 3, 3) ;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+   }
+
+   .contact-form{
+    height: 30rem;
+    margin: 2rem;
+    /* background-color:white; */
+    
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap:3rem;
+    padding: 2rem;
+   }
+   .contact-form input,select{
+    
+    padding: 1.6rem;
+    border-radius: 9px;
+    /* color: white; */
+    border: none;
+    width:90% ;
+    font-size: 1.5rem;
+    
+    
+    
+   }
+   .button{
+    background-color:rgb(59, 1, 1) ;
+    color: white;
+    width: 80%;
+    font-size: 2rem;
+   }
+   .button:hover{
+    background-color:rgba(59, 1, 1, 0.541) ;
+   }
+   
+   .span{
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+   }
+   .sign-up{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+    padding-top: 1.5rem;
+    
+   }
+   .contact-image{
+    background-image: linear-gradient(to right bottom,rgba(59, 1, 1, 0.244),rgba(255, 255, 255, 0.371));
+    height: 35rem;
+    
+   }
+
+.footer-heading{
+    color: white;
+    
+    font-size: 6rem;
+   }
+   .footer-heading-2{
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+   }
+
+   .footer-icon{
+    font-size:2.5rem;
+    color: white;
+    padding: 1rem;
+   }
+   .footer-icon:hover{
+    font-size:3rem;
+   }
+   .footer-address{
+    color: white;
+    font-size:1.2rem ;
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 1rem;
+    
+}
+.footer-address-1{
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+.footer-address-2{
+    font-size: 1.5rem;
+    display: block;
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration:none ;
+    text-transform: capitalize;
+}
+.available{
+    margin-bottom:0.5rem ;
+}
+.footer-div{
+
+    height: 35rem;
+    background-color: rgb(124, 123, 123);
+}
+.foooter{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10rem;
+    padding: 5rem 10rem;
+    margin: 0 auto;
+}
+.horizontal{
+    /* margin-top: 30rem; */
+}
+.copyright{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2rem;
+}
